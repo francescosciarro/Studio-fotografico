@@ -1,0 +1,27 @@
+
+#Nav-list{
+    display: flex;
+    background-color: #d3d3d3;
+    padding: 0%;
+}
+
+#Nav-list-left{
+    display: flex;
+    flex-direction: column;
+    background-color: #d3d3d3;
+    padding: 0%;
+}
+
+#Nav-left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #d3d3d3;
+    margin-right: 90%;
+}
+
+.Nav-element{
+    display: flex;
+    border:solid 1px rgb(88, 32, 32);
+    padding: 2%;
+}
