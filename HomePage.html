@@ -3,33 +3,81 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="index.css">
-    <title>Luci soffuse Homepage</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="HomePage.css">
+    <title>Studio fotografico Homepage</title>
 </head>
 
 <body>
-    <header>
-        <nav id="Nav-header">
-            <ul id="Nav-list" style="list-style-type: none;">
-                <li class="Nav-element"><a href="/home" style="text-decoration: none; color: black;">Home</a></li>
-                <li class="Nav-element"><a href="/about" style="text-decoration: none; color: black;">Gli autori</a>
+    <div class="column">
+        <nav class="navbar navbar-expand-lg" style="background-color: rgb(169, 206, 206)">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="navbar-brand mb-0 h1">Studio fotografico</a>
                 </li>
-                <li class="Nav-element"><a href="/refactoring" style="text-decoration: none; color: black;">Il progetto
-                        four2five</a></li>
-                <li class="Nav-element"><a href="/archives" style="text-decoration: none; color: black;">Archivio</a>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="./HomePage.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">Chi siamo</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">Contatti</a>
                 </li>
             </ul>
         </nav>
-    </header>
-    <h3>I nostri collaboratori</h3>
-    <nav id="Nav-left">
-        <ul id="Nav-list-left"  style="list-style-type: none;">
-            <li class="Nav-element"><a href="/fotografo1" style="text-decoration: none; color: black;">fotografo 1</a></li>
-            <li class="Nav-element"><a href="/fotografo2" style="text-decoration: none; color: black;">fotografo 2</a></li>
-            <li class="Nav-element"><a href="/fotografo3" style="text-decoration: none; color: black;">fotografo 3</a></li>
-        </ul>
-    </nav>
+    </div>
+        <div class="container-fluid">
+            <div class="row">
+                <nav class="col-md-3 col-lg-2 d-md-block sidebar">
+                    <div class="position-sticky">
+                        <ul class="nav flex-column">
+                            <li class="navbar-brand mb-0 h1">I nostri collaboratori</li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="#fotografo1"> fotografo 1</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="#fotografo2"> fotografo 2</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="#fotografo3"> fotografo 3</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+                <div class="col-lg">
+                    <div class="card mb-3" >
+                        <div class="row g-0">
+                            <div class="col-sm">
+                                <img
+                                    src="./public/Megumin.png"
+                                    class="img-fluid rounded-start"
+                                    alt="Card title"
+                                />
+                            </div>
+                            <div class="col-md-9">
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">
+                                        This is a wider card with supporting text below as a
+                                        natural lead-in to additional content. This content is a
+                                        little bit longer.
+                                    </p>
+                                    <p class="card-text">
+                                        <small class="text-muted"
+                                            >Last updated 3 mins ago</small
+                                        >
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
