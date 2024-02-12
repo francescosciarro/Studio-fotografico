@@ -10,8 +10,8 @@
     <title>Luce Magica Homepage</title>
 </head>
 
-<body>
-    <div class="container-fluid p-0">
+<body class="d-flex flex-column min-vh-100">
+    <div class="container-fluid p-0 flex-grow-1">
         <div class="row g-0">
             <div class="col-md-1 d-flex align-items-center">
                 <img src="./public/Logo.png" class="img-fluid logo-img" height="150">
@@ -35,48 +35,56 @@
     </div>
     <div class="container-fluid">
         <div class="row">
-            <div class="flex-shrink-0 p-3 sidebar" style="width: 280px;">
+            <div class="flex-shrink-0 p-3 col-lg-3 sidebar" style="width: 280px;">
                 <ul class="list-unstyled ps-0">
                     <li class="mb-3">
-                      <button class="btn btn-toggle align-items-center rounded collapsed bi bi-chevron-right" data-bs-toggle="collapse" data-bs-target="#home-collapse" aria-expanded="false">
-                        I nostri collaboratori
-                      </button>
-                      <div class="collapse" id="home-collapse">
-                        <ul class="btn-toggle-nav list-unstyled fw-normal pb-1">
-                          <li><a href="#" class="nav-link rounded">Fotografo 1</a></li>
-                          <li><a href="#" class="nav-link rounded">Fotografo 2</a></li>
-                          <li><a href="#" class="nav-link rounded">Fotografo 3</a></li>
-                        </ul>
-                      </div>
+                        <button class="btn btn-toggle align-items-center rounded collapsed bi bi-chevron-right"
+                            data-bs-toggle="collapse" data-bs-target="#home-collapse" aria-expanded="false">
+                            I nostri collaboratori
+                        </button>
+                        <div class="collapse" id="home-collapse">
+                            <ul class="btn-toggle-nav list-unstyled fw-normal pb-1">
+                                <li><a href="./components/Fotografi/Francesca Raspoli.html" class="nav-link rounded">Francesca Raspoli</a></li>
+                                <li><a href="./components/Fotografi/Gigio Poretti.html" class="nav-link rounded">Gigio Poretti</a></li>
+                                <li><a href="./components/Fotografi/Lucio Belvedere.html" class="nav-link rounded">Lucio Belvedere</a></li>
+                            </ul>
+                        </div>
                     </li>
                     <li class="border-top py-2"></li>
                     <li class="mb-1">
-                      <button class="btn btn-toggle align-items-center rounded collapsed bi bi-chevron-right" data-bs-toggle="collapse" data-bs-target="#account-collapse" aria-expanded="false">
-                        Account
-                      </button>
-                      <div class="collapse" id="account-collapse">
-                        <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-                          <li><a href="#" class="nav-link rounded">Profile</a></li>
-                          <li><a href="#" class="nav-link rounded">Settings</a></li>
-                          <li><a href="#" class="nav-link rounded">Sign out</a></li>
-                        </ul>
-                      </div>
+                        <button class="btn btn-toggle align-items-center rounded collapsed bi bi-chevron-right"
+                            data-bs-toggle="collapse" data-bs-target="#account-collapse" aria-expanded="false">
+                            Account
+                        </button>
+                        <div class="collapse" id="account-collapse">
+                            <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                                <li><a href="#" class="nav-link rounded">Profile</a></li>
+                                <li><a href="#" class="nav-link rounded">Settings</a></li>
+                                <li><a href="#" class="nav-link rounded">Sign out</a></li>
+                            </ul>
+                        </div>
                     </li>
-                  </ul>
+                </ul>
             </div>
-            <div class="col-lg">
+            <div class="col-lg-9">
                 <div class="card mb-3">
                     <div class="row g-0">
                         <div class="col-sm">
-                            <img src="./public/Megumin.png" class="img-fluid rounded-start" alt="Card title" />
+                            <img src="./public/foto_professionale.webp" class="img-fluid rounded-start"
+                                alt="Card title" />
                         </div>
                         <div class="col-md-9">
                             <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
+                                <h5 class="card-title">Ritratti Professionali</h5>
                                 <p class="card-text">
-                                    This is a wider card with supporting text below as a
-                                    natural lead-in to additional content. This content is a
-                                    little bit longer.
+                                    Valorizza la tua immagine professionale con i nostri servizi
+                                    su misura di ritratti. I nostri
+                                    fotografi esperti comprendono l'importanza di un ritratto accattivante nel panorama
+                                    competitivo di oggi. Realizziamo ogni scatto con cura per mettere in risalto la tua
+                                    personalità, la tua competenza e la tua fiducia. Dai dirigenti aziendali agli attori
+                                    aspiranti, il nostro obiettivo è catturare l'essenza di chi sei e cosa rappresenti.
+                                    Con la nostra illuminazione, composizione e direzione esperte, uscirai con ritratti
+                                    che attirano l'attenzione e lasciano un'impressione duratura.
                                 </p>
                                 <p class="card-text">
                                     <small class="text-muted">Last updated 3 mins ago</small>
@@ -88,15 +96,19 @@
                 <div class="card mb-3">
                     <div class="row g-0">
                         <div class="col-sm">
-                            <img src="./public/Megumin.png" class="img-fluid rounded-start" alt="Card title" />
+                            <img src="./public/festa-in-giardino.jpg" class="img-fluid rounded-start" alt="Card title" />
                         </div>
                         <div class="col-md-9">
                             <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
+                                <h5 class="card-title">Fotografia di Eventi</h5>
                                 <p class="card-text">
-                                    This is a wider card with supporting text below as a
-                                    natural lead-in to additional content. This content is a
-                                    little bit longer.
+                                    Affidati a noi per documentare i tuoi momenti più preziosi con
+                                    i nostri pacchetti fotografici completi per eventi. Che si tratti di un matrimonio,
+                                    una serata aziendale o una riunione familiare, il nostro team è dedicato a
+                                    preservare ogni sorriso, risata e lacrima. Ci fondiamo perfettamente con lo sfondo,
+                                    catturando momenti spontanei ed emozioni genuine senza interferire nella festa.
+                                    Dalle celebrazioni più grandiose ai raduni intimi, ci vantiamo di offrire immagini
+                                    sorprendenti che raccontano la storia del tuo evento per anni a venire.
                                 </p>
                                 <p class="card-text">
                                     <small class="text-muted">Last updated 3 mins ago</small>
@@ -108,15 +120,72 @@
                 <div class="card mb-3">
                     <div class="row g-0">
                         <div class="col-sm">
-                            <img src="./public/Megumin.png" class="img-fluid rounded-start" alt="Card title" />
+                            <img src="./public/studio-concept.jpg" class="img-fluid rounded-start" alt="Card title" />
                         </div>
                         <div class="col-md-9">
                             <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
+                                <h5 class="card-title">Fotografia di Prodotto</h5>
                                 <p class="card-text">
-                                    This is a wider card with supporting text below as a
-                                    natural lead-in to additional content. This content is a
-                                    little bit longer.
+                                    Trasforma i tuoi prodotti in opere d'arte con i nostri
+                                    servizi professionali di fotografia di prodotto. Sappiamo che le immagini giocano un
+                                    ruolo cruciale nel guidare le vendite e catturare il pubblico. Ecco perché ci
+                                    impegniamo al massimo per mostrare i tuoi prodotti nella luce migliore possibile.
+                                    Dai gadget eleganti alle pietanze succulente, stilizziamo e fotografiamo
+                                    meticolosamente ogni articolo, prestando attenzione ad ogni dettaglio. Le nostre
+                                    immagini non solo mettono in evidenza le caratteristiche e i vantaggi dei tuoi
+                                    prodotti, ma suscitano anche desiderio ed eccitazione, spingendo i clienti ad
+                                    acquistare.
+                                </p>
+                                <p class="card-text">
+                                    <small class="text-muted">Last updated 3 mins ago</small>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card mb-3">
+                    <div class="row g-0">
+                        <div class="col-sm">
+                            <img src="./public/ritratto.png" class="img-fluid rounded-start" alt="Card title" />
+                        </div>
+                        <div class="col-md-9">
+                            <div class="card-body">
+                                <h5 class="card-title">Sessioni Fotografiche di Ritratti</h5>
+                                <p class="card-text">
+                                    Libera la tua bellezza interiore e la tua fiducia
+                                    con le nostre sessioni fotografiche di ritratti personalizzate. Che tu stia
+                                    celebrando un traguardo, catturando ricordi di famiglia o semplicemente dedicandoti
+                                    a una giornata di coccole, i nostri fotografi esperti ti faranno sentire una star.
+                                    Dedichiamo il tempo necessario per capire la tua personalità, le tue preferenze e la
+                                    tua visione, garantendo che ogni scatto rifletta il tuo vero io. Dai ritratti
+                                    glamour in studio alle sessioni all'aperto più spontanee, offriamo una varietà di
+                                    stili per soddisfare i tuoi gusti individuali. Lasciaci creare ritratti senza tempo
+                                    che custodirai per generazioni.
+                                </p>
+                                <p class="card-text">
+                                    <small class="text-muted">Last updated 3 mins ago</small>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card mb-3">
+                    <div class="row g-0">
+                        <div class="col-sm">
+                            <img src="./public/progetti-creativi.jpeg" class="img-fluid rounded-start" alt="Card title" />
+                        </div>
+                        <div class="col-md-9">
+                            <div class="card-body">
+                                <h5 class="card-title">Progetti Creativi</h5>
+                                <p class="card-text">
+                                    Porta in vita i tuoi sogni più audaci e le tue idee più brillanti
+                                    con i nostri progetti creativi collaborativi. Che tu sia un artista visionario, un
+                                    imprenditore innovativo o un narratore appassionato, siamo qui per aiutarti a
+                                    trasformare i tuoi concetti in realtà. Il nostro team di professionisti esperti
+                                    prospera nel superare i limiti della creatività ed esplorare nuove possibilità.
+                                    Dalla conceptualizzazione e pianificazione all'esecuzione e post-produzione, ci
+                                    occuperemo di ogni aspetto del tuo progetto con precisione e stile. Lasciaci essere
+                                    il tuo partner creativo nel viaggio per dare vita alla tua immaginazione.
                                 </p>
                                 <p class="card-text">
                                     <small class="text-muted">Last updated 3 mins ago</small>
@@ -128,14 +197,14 @@
             </div>
         </div>
     </div>
-    <div class="container-fluid footer border-top">
+    <div class="container-fluid border-top border-secondary py-4">
         <footer>
             <div class="row">
                 <div class="col col-md-8">
                     <h4 id="contatti">Contatti</h4>
                     <ul class="nav flex-column">
                         <li class="nav-item mb-3">Telefono: 0735 895840</li>
-                        <li class="nav-item mb-3">Email: StudioFotografico@gmail.com</li>
+                        <li class="nav-item mb-3">Email: LuceMagica@gmail.com</li>
                         <li class="nav-item mb-3">Fax: +39 (0) 12 345 6789</li>
                     </ul>
                 </div>
@@ -152,8 +221,8 @@
                     </form>
                 </div>
             </div>
-            <div class="d-flex flex-column flex-lg-row justify-content-between py-2 border-top">
-                <p>© 2024 Studio fotografico. Tutti i diritti riservati.</p>
+            <div class="d-flex flex-column flex-lg-row justify-content-between py-2 border-top border-secondary">
+                <p>© 2024 Luce Magica. Tutti i diritti riservati.</p>
                 <ul class="list-unstyled d-flex">
                     <li class="ms-3"><a class="link-dark" href="https://twitter.com/"><img
                                 src="public\twitter-x-logo.png" class="bi" width="24" height="24"></img></a></li>

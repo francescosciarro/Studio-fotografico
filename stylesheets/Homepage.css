@@ -1,5 +1,5 @@
-body {
-    min-height: 100vh;
+html, body {
+    height: 100%;
     background-color: #fce4d8ff;
     margin: 0 auto;
 }
@@ -34,6 +34,7 @@ body {
 
 .sidebar {
     background-color: #946e83ff;
+    position: relative;
 }
 
 .sidebar .nav-link:hover {
@@ -50,10 +51,7 @@ body {
     transform: rotate(90deg);
 }
 
-.footer {
-    position: absolute;
-    bottom: 0;
-}
+
 @keyframes flash {
     0%, 20%, 40%, 60%, 80% {
         color: white;
@@ -64,7 +62,7 @@ body {
     }
 }
 #contatti:target {
-    animation: flash 2s linear;
+    animation: flash 3s linear;
 }
 
 /* --mountbatten-pink: #946e83ff;

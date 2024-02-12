@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -8,8 +9,9 @@
     <link rel="stylesheet" href="./stylesheets/formstyle.css">
     <link rel="stylesheet" href="./stylesheets/Homepage.css">
 
-</head>    
-<body>
+</head>
+
+<body class="d-flex flex-column min-vh-100">
     <div class="container-fluid p-0">
         <div class="row g-0">
             <div class="col-md-1 d-flex align-items-center">
@@ -32,146 +34,121 @@
             </div>
         </div>
     </div>
-    <div class="container-fluid">
         <div class="row">
-            <div class="flex-shrink-0 p-3 sidebar" style="width: 280px;">
+            <div class="flex-shrink-0 p-3 col-md-3 fle sidebar" style="width: 280px;">
                 <ul class="list-unstyled ps-0">
                     <li class="mb-3">
-                      <button class="btn btn-toggle align-items-center rounded collapsed bi bi-chevron-right" data-bs-toggle="collapse" data-bs-target="#home-collapse" aria-expanded="false">
-                        I nostri collaboratori
-                      </button>
-                      <div class="collapse" id="home-collapse">
-                        <ul class="btn-toggle-nav list-unstyled fw-normal pb-1">
-                          <li><a href="#" class="nav-link rounded">Fotografo 1</a></li>
-                          <li><a href="#" class="nav-link rounded">Fotografo 2</a></li>
-                          <li><a href="#" class="nav-link rounded">Fotografo 3</a></li>
-                        </ul>
-                      </div>
+                        <button class="btn btn-toggle align-items-center rounded collapsed bi bi-chevron-right"
+                            data-bs-toggle="collapse" data-bs-target="#home-collapse" aria-expanded="false">
+                            I nostri collaboratori
+                        </button>
+                        <div class="collapse" id="home-collapse">
+                            <ul class="btn-toggle-nav list-unstyled fw-normal pb-1">
+                                <li><a href="#" class="nav-link rounded">Fotografo 1</a></li>
+                                <li><a href="#" class="nav-link rounded">Fotografo 2</a></li>
+                                <li><a href="#" class="nav-link rounded">Fotografo 3</a></li>
+                            </ul>
+                        </div>
                     </li>
                     <li class="border-top py-2"></li>
                     <li class="mb-1">
-                      <button class="btn btn-toggle align-items-center rounded collapsed bi bi-chevron-right" data-bs-toggle="collapse" data-bs-target="#account-collapse" aria-expanded="false">
-                        Account
-                      </button>
-                      <div class="collapse" id="account-collapse">
-                        <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-                          <li><a href="#" class="nav-link rounded">Profile</a></li>
-                          <li><a href="#" class="nav-link rounded">Settings</a></li>
-                          <li><a href="#" class="nav-link rounded">Sign out</a></li>
-                        </ul>
-                      </div>
+                        <button class="btn btn-toggle align-items-center rounded collapsed bi bi-chevron-right"
+                            data-bs-toggle="collapse" data-bs-target="#account-collapse" aria-expanded="false">
+                            Account
+                        </button>
+                        <div class="collapse" id="account-collapse">
+                            <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                                <li><a href="#" class="nav-link rounded">Profile</a></li>
+                                <li><a href="#" class="nav-link rounded">Settings</a></li>
+                                <li><a href="#" class="nav-link rounded">Sign out</a></li>
+                            </ul>
+                        </div>
                     </li>
-                  </ul>
+                </ul>
             </div>
-        <div id="register" class="col">
-            <h1 id="title-register">Iscrizione</h1>
-            <form id="prenota">
-                <p class="register-inputs">
-                    <span>Nome: </span>
-                    <input
-                        placeholder="First"
-                        type="text"
-                        name="firstName"
-                        required
-                    />
-                    <input
-                        placeholder="Last"
-                        type="text"
-                        name="lastName"
-                        required
-                    />
-                </p>
-                <p class="register-inputs">
-                    <span>Contatti: </span>
-                    <input
-                        placeholder="Email"
-                        type="text"
-                        name="email"
-                        required
-                    />
-                    <input
-                        placeholder="Phone number"
-                        type="text"
-                        name="phoneNumber"
-                        required
-                    />
-                </p>
-                <p class="register-inputs">
-                    <span>Indirizzo e comune di residenza: </span>
-                    
-                    <input
-                        placeholder="es.Via Roma"
-                        type="text"
-                        
-                        required
-                    />
-                    <input
-                        placeholder="es.Milano"
-                        type="text"
-                        
-                        required
-                    />
-                    
-                </p>
-                
-                <p class="register-inputs">
-                    <span>Genere:</span>
-                    <select>
-                        <option>Uomo</option>
-                        <option>Donna</option>
-                        <option>Altro</option>
-                    </select>
-                </p>
-                <p id="register-buttons">
-                    <button type="submit">Save</button>
-                    
-                    <button type="button">Cancel</button>
-                </p>
+            <div id="register" class="col-md-9">
+                <h1 id="title-register">Iscrizione</h1>
+                <form id="prenota">
+                    <p class="register-inputs">
+                        <span>Nome: </span>
+                        <input placeholder="First" type="text" name="firstName" required />
+                        <input placeholder="Last" type="text" name="lastName" required />
+                    </p>
+                    <p class="register-inputs">
+                        <span>Contatti: </span>
+                        <input placeholder="Email" type="text" name="email" required />
+                        <input placeholder="Phone number" type="text" name="phoneNumber" required />
+                    </p>
+                    <p class="register-inputs">
+                        <span>Indirizzo e comune di residenza: </span>
 
-            </form>
+                        <input placeholder="es.Via Roma" type="text" required />
+                        <input placeholder="es.Milano" type="text" required />
 
-        </div>
-        <div id="success" class="alert alert-success" > tutto apposto capo</div>
-        <div class="container-fluid footer border-top">
-            <footer>
-                <div class="row">
-                    <div class="col col-md-8">
-                        <h4 id="contatti">Contatti</h4>
-                        <ul class="nav flex-column">
-                            <li class="nav-item mb-3">Telefono: 0735 895840</li>
-                            <li class="nav-item mb-3">Email: StudioFotografico@gmail.com</li>
-                            <li class="nav-item mb-3">Fax: +39 (0) 12 345 6789</li>
+                    </p>
+
+                    <p class="register-inputs">
+                        <span>Genere:</span>
+                        <select>
+                            <option>Uomo</option>
+                            <option>Donna</option>
+                            <option>Altro</option>
+                        </select>
+                    </p>
+                    <p id="register-buttons">
+                        <button type="submit">Save</button>
+
+                        <button type="button">Cancel</button>
+                    </p>
+
+                </form>
+
+            </div>
+            <div id="success" class="alert alert-success"> tutto apposto capo</div>
+            <div class="container-fluid footer border-top">
+                <footer>
+                    <div class="row">
+                        <div class="col col-md-8">
+                            <h4 id="contatti">Contatti</h4>
+                            <ul class="nav flex-column">
+                                <li class="nav-item mb-3">Telefono: 0735 895840</li>
+                                <li class="nav-item mb-3">Email: StudioFotografico@gmail.com</li>
+                                <li class="nav-item mb-3">Fax: +39 (0) 12 345 6789</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-3">
+                            <form>
+                                <h5>Iscriviti alla nostra newsletter</h5>
+                                <p>La fotografia è la tua passione? Ogni mese scriviamo un articolo su tutte le
+                                    sfaccettature di
+                                    questa bellissima arte!</p>
+                                <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                                    <label for="newsletter1" class="visually-hidden">Email </label>
+                                    <input id="newsletter1" type="text" class="form-control"
+                                        placeholder="Indirizzo email">
+                                    <button class="btn btn-primary" type="button">Iscriviti</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="d-flex flex-column flex-lg-row justify-content-between py-2 border-top">
+                        <p>© 2024 Studio fotografico. Tutti i diritti riservati.</p>
+                        <ul class="list-unstyled d-flex">
+                            <li class="ms-3"><a class="link-dark" href="https://twitter.com/"><img
+                                        src="public\twitter-x-logo.png" class="bi" width="24" height="24"></img></a>
+                            </li>
+                            <li class="ms-3"><a class="link-dark" href="https://www.instagram.com/"><img
+                                        src="public\instagram-logo.png" class="bi" width="24" height="24"></img></a>
+                            </li>
+                            <li class="ms-3"><a class="link-dark" href="https://www.facebook.com/"><img
+                                        src="public\facebook-logo.jpg" class="bi" width="24" height="24">
+                                    <use xlink:href="#facebook"></use></img>
+                                </a></li>
                         </ul>
                     </div>
-                    <div class="col-md-3">
-                        <form>
-                            <h5>Iscriviti alla nostra newsletter</h5>
-                            <p>La fotografia è la tua passione? Ogni mese scriviamo un articolo su tutte le sfaccettature di
-                                questa bellissima arte!</p>
-                            <div class="d-flex flex-column flex-sm-row w-100 gap-2">
-                                <label for="newsletter1" class="visually-hidden">Email </label>
-                                <input id="newsletter1" type="text" class="form-control" placeholder="Indirizzo email">
-                                <button class="btn btn-primary" type="button">Iscriviti</button>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-                <div class="d-flex flex-column flex-lg-row justify-content-between py-2 border-top">
-                    <p>© 2024 Studio fotografico. Tutti i diritti riservati.</p>
-                    <ul class="list-unstyled d-flex">
-                        <li class="ms-3"><a class="link-dark" href="https://twitter.com/"><img
-                                    src="public\twitter-x-logo.png" class="bi" width="24" height="24"></img></a></li>
-                        <li class="ms-3"><a class="link-dark" href="https://www.instagram.com/"><img
-                                    src="public\instagram-logo.png" class="bi" width="24" height="24"></img></a></li>
-                        <li class="ms-3"><a class="link-dark" href="https://www.facebook.com/"><img
-                                    src="public\facebook-logo.jpg" class="bi" width="24" height="24">
-                                <use xlink:href="#facebook"></use></img>
-                            </a></li>
-                    </ul>
-                </div>
-            </footer>
-        </div>
-        <script src="./scripts/myscripts.js"></script>
-        
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-    </body>
+                </footer>
+            </div>
+            <script src="./scripts/myscripts.js"></script>
+
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
