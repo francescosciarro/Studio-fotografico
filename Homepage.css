@@ -36,6 +36,12 @@ body {
     background-color: #946e83ff;
 }
 
+.sidebar .nav-link:hover {
+    color: white;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
 .btn-toggle::before {
     transition: transform 0.4s ease;
 }
@@ -45,9 +51,21 @@ body {
 }
 
 .footer {
-    position: absolute;
-    bottom: 0;
-    z-index: 9999;
+    position: relative;
+    margin: top 20px;
+    padding: 20px;
+}
+@keyframes flash {
+    0%, 20%, 40%, 60%, 80% {
+        color: white;
+    }
+    10%, 30%, 50%, 70%, 90% {
+        color: red;
+        font-size: 35px;
+    }
+}
+#contatti:target {
+    animation: flash 2s linear;
 }
 
 /* --mountbatten-pink: #946e83ff;
