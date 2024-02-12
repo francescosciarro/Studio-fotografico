@@ -51,9 +51,8 @@ body {
 }
 
 .footer {
-    position: relative;
-    margin: top 20px;
-    padding: 20px;
+    position: absolute;
+    bottom: 0;
 }
 @keyframes flash {
     0%, 20%, 40%, 60%, 80% {
