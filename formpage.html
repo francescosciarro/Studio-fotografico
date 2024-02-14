@@ -24,7 +24,7 @@
                             <a class="nav-link active" aria-current="page" href="./HomePage.html">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" href="./About.page.html">Chi siamo</a>
+                            <a class="nav-link active" href="./AboutPage.html">Chi siamo</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link active" href="#contatti">Contatti</a>
@@ -34,6 +34,7 @@
             </div>
         </div>
     </div>
+    <div class="container-fluid">
         <div class="row">
             <div class="flex-shrink-0 p-3 col-md-3 fle sidebar" style="width: 280px;">
                 <ul class="list-unstyled ps-0">
@@ -44,9 +45,12 @@
                         </button>
                         <div class="collapse" id="home-collapse">
                             <ul class="btn-toggle-nav list-unstyled fw-normal pb-1">
-                                <li><a href="#" class="nav-link rounded">Fotografo 1</a></li>
-                                <li><a href="#" class="nav-link rounded">Fotografo 2</a></li>
-                                <li><a href="#" class="nav-link rounded">Fotografo 3</a></li>
+                                <li><a href="./components/Fotografi/Francesca Raspoli.html"
+                                        class="nav-link rounded">Francesca Raspoli</a></li>
+                                <li><a href="./components/Fotografi/Gigio Poretti.html" class="nav-link rounded">Gigio
+                                        Poretti</a></li>
+                                <li><a href="./components/Fotografi/Lucio Belvedere.html" class="nav-link rounded">Lucio
+                                        Belvedere</a></li>
                             </ul>
                         </div>
                     </li>
@@ -66,28 +70,29 @@
                     </li>
                 </ul>
             </div>
-            <div id="register" class="col-md-9">
-                <h1 id="title-register">Iscrizione</h1>
-                <form id="prenota">
-                    <p class="register-inputs">
-                        <span>Nome: </span>
-                        <input placeholder="First" type="text" name="firstName" required />
-                        <input placeholder="Last" type="text" name="lastName" required />
+            <div id="register" class="col-md-9 d-flex flex-column">
+                <p class="fs-2 mb-0">TI piace il nostro lavoro?</p>
+                <p class="fs-1 text-center fw-light">Prenota un <span class="fw-bolder" id="appuntamento">appuntamento</span></p>
+                <form id="prenota" style="height: 70vh" class="">
+                    <p class="fs-5 fw-bold py-4 register-inputs">
+                        <span >Nome: </span>
+                        <input placeholder="Mario" type="text" required />
+                        <input placeholder="Rossi" type="text" required />
                     </p>
-                    <p class="register-inputs">
+                    <p class="fs-5 fw-bold py-4 register-inputs">
                         <span>Contatti: </span>
                         <input placeholder="Email" type="text" name="email" required />
-                        <input placeholder="Phone number" type="text" name="phoneNumber" required />
+                        <input placeholder="3715983647" type="text" name="phoneNumber" required />
                     </p>
-                    <p class="register-inputs">
+                    <p class="fs-5 fw-bold py-4 register-inputs">
                         <span>Indirizzo e comune di residenza: </span>
 
-                        <input placeholder="es.Via Roma" type="text" required />
-                        <input placeholder="es.Milano" type="text" required />
+                        <input placeholder="Via Roma" type="text" required />
+                        <input placeholder="Milano" type="text" required />
 
                     </p>
 
-                    <p class="register-inputs">
+                    <p class="fs-5 fw-bold py-4 register-inputs">
                         <span>Genere:</span>
                         <select>
                             <option>Uomo</option>
@@ -96,59 +101,57 @@
                         </select>
                     </p>
                     <p id="register-buttons">
-                        <button type="submit">Save</button>
-
-                        <button type="button">Cancel</button>
+                        <button type="submit" class="btn btn-secondary btn-lg">Prenota</button>
                     </p>
+                    <div id="success" class="col-lg-5 alert alert-success"> tutto apposto capo</div>
 
                 </form>
-
             </div>
-            <div id="success" class="alert alert-success"> tutto apposto capo</div>
-            <div class="container-fluid footer border-top">
-                <footer>
-                    <div class="row">
-                        <div class="col col-md-8">
-                            <h4 id="contatti">Contatti</h4>
-                            <ul class="nav flex-column">
-                                <li class="nav-item mb-3">Telefono: 0735 895840</li>
-                                <li class="nav-item mb-3">Email: StudioFotografico@gmail.com</li>
-                                <li class="nav-item mb-3">Fax: +39 (0) 12 345 6789</li>
-                            </ul>
+        </div>
+    </div>
+    <div class="container-fluid border-top border-secondary py-4 flex-grow-1">
+        <footer>
+            <div class="row">
+                <div class="col col-md-8">
+                    <h4 id="contatti">Contatti</h4>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-3">Telefono: 0735 895840</li>
+                        <li class="nav-item mb-3">Email: StudioFotografico@gmail.com</li>
+                        <li class="nav-item mb-3">Fax: +39 (0) 12 345 6789</li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <form>
+                        <h5>Iscriviti alla nostra newsletter</h5>
+                        <p>La fotografia è la tua passione? Ogni mese scriviamo un articolo su tutte le
+                            sfaccettature di
+                            questa bellissima arte!</p>
+                        <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                            <label for="newsletter1" class="visually-hidden">Email </label>
+                            <input id="newsletter1" type="text" class="form-control" placeholder="Indirizzo email">
+                            <button class="btn btn-primary" type="button">Iscriviti</button>
                         </div>
-                        <div class="col-md-3">
-                            <form>
-                                <h5>Iscriviti alla nostra newsletter</h5>
-                                <p>La fotografia è la tua passione? Ogni mese scriviamo un articolo su tutte le
-                                    sfaccettature di
-                                    questa bellissima arte!</p>
-                                <div class="d-flex flex-column flex-sm-row w-100 gap-2">
-                                    <label for="newsletter1" class="visually-hidden">Email </label>
-                                    <input id="newsletter1" type="text" class="form-control"
-                                        placeholder="Indirizzo email">
-                                    <button class="btn btn-primary" type="button">Iscriviti</button>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                    <div class="d-flex flex-column flex-lg-row justify-content-between py-2 border-top">
-                        <p>© 2024 Studio fotografico. Tutti i diritti riservati.</p>
-                        <ul class="list-unstyled d-flex">
-                            <li class="ms-3"><a class="link-dark" href="https://twitter.com/"><img
-                                        src="public\twitter-x-logo.png" class="bi" width="24" height="24"></img></a>
-                            </li>
-                            <li class="ms-3"><a class="link-dark" href="https://www.instagram.com/"><img
-                                        src="public\instagram-logo.png" class="bi" width="24" height="24"></img></a>
-                            </li>
-                            <li class="ms-3"><a class="link-dark" href="https://www.facebook.com/"><img
-                                        src="public\facebook-logo.jpg" class="bi" width="24" height="24">
-                                    <use xlink:href="#facebook"></use></img>
-                                </a></li>
-                        </ul>
-                    </div>
-                </footer>
+                    </form>
+                </div>
             </div>
-            <script src="./scripts/myscripts.js"></script>
+            <div class="d-flex flex-column flex-lg-row justify-content-between py-2 border-top border-secondary">
+                <p>© 2024 Studio fotografico. Tutti i diritti riservati.</p>
+                <ul class="list-unstyled d-flex">
+                    <li class="ms-3"><a class="link-dark" href="https://twitter.com/"><img
+                                src="public\twitter-x-logo.png" class="bi" width="24" height="24"></img></a>
+                    </li>
+                    <li class="ms-3"><a class="link-dark" href="https://www.instagram.com/"><img
+                                src="public\instagram-logo.png" class="bi" width="24" height="24"></img></a>
+                    </li>
+                    <li class="ms-3"><a class="link-dark" href="https://www.facebook.com/"><img
+                                src="public\facebook-logo.jpg" class="bi" width="24" height="24">
+                            <use xlink:href="#facebook"></use></img>
+                        </a></li>
+                </ul>
+            </div>
+        </footer>
+    </div>
 
-            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./scripts/formScripts.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>

@@ -1,0 +1,17 @@
+.studio-info {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.photo-grid {
+    margin-top: 30px;
+}
+
+.photo-grid .col-md-4{
+    padding: 5px;
+}
+
+.photo-grid img {
+    width: 100%;
+    height: auto;
+}

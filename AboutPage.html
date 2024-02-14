@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chi Siamo - Studio Fotografico</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="./stylesheets/Homepage.css">
+    <link rel="stylesheet" href="./stylesheets/Aboutpage.css">
+</head>
+
+<body class="d-flex flex-column min-vh-100">
+    <div class="container-fluid p-0">
+        <div class="row g-0">
+            <div class="col-md-1 d-flex align-items-center">
+                <img src="./public/Logo.png" class="img-fluid logo-img" height="150">
+            </div>
+            <div class="col-md-11">
+                <nav class="navbar navbar-expand-lg" style="background-color:#326771ff">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./HomePage.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="./AboutPage.html">Chi siamo</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#contatti">Contatti</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="flex-shrink-0 p-3 col-lg-3 sidebar" style="width: 280px;">
+                <ul class="list-unstyled ps-0">
+                    <li class="mb-3">
+                        <button class="btn btn-toggle align-items-center rounded collapsed bi bi-chevron-right"
+                            data-bs-toggle="collapse" data-bs-target="#home-collapse" aria-expanded="false">
+                            I nostri collaboratori
+                        </button>
+                        <div class="collapse" id="home-collapse">
+                            <ul class="btn-toggle-nav list-unstyled fw-normal pb-1">
+                                <li><a href="./components/Fotografi/Francesca Raspoli.html"
+                                        class="nav-link rounded">Francesca Raspoli</a></li>
+                                <li><a href="./components/Fotografi/Gigio Poretti.html" class="nav-link rounded">Gigio
+                                        Poretti</a></li>
+                                <li><a href="./components/Fotografi/Lucio Belvedere.html" class="nav-link rounded">Lucio
+                                        Belvedere</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="border-top py-2"></li>
+                    <li class="mb-1">
+                        <button class="btn btn-toggle align-items-center rounded collapsed bi bi-chevron-right"
+                            data-bs-toggle="collapse" data-bs-target="#account-collapse" aria-expanded="false">
+                            Account
+                        </button>
+                        <div class="collapse" id="account-collapse">
+                            <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                                <li><a href="#" class="nav-link rounded">Profile</a></li>
+                                <li><a href="#" class="nav-link rounded">Settings</a></li>
+                                <li><a href="#" class="nav-link rounded">Sign out</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-8 offset-md-1 mt-5 pt-5" style="height: 100vh;">
+                <div class="studio-info">
+                    <h1>Chi Siamo</h1>
+                    <p class="fs-3 m">Benvenuti nel nostro studio fotografico! Siamo specializzati nel catturare momenti
+                        belli che durano per sempre.</p>
+                    <p class="fs-4">Il nostro team di fotografi esperti è dedicato a fornirvi immagini sorprendenti che
+                        amerete per sempre.</p>
+                    <p class="fs-4">Sia che si tratti di un ritratto di famiglia, di una cerimonia di matrimonio o di un
+                        evento aziendale, siamo qui per rendere ogni momento indimenticabile.</p>
+                </div>
+                <div class="photo-grid">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <img src="public/about1.jpg" class="img-fluid rounded">
+                        </div>
+                        <div class="col-md-4">
+                            <img src="public/about2.jpg" class="img-fluid rounded">
+                        </div>
+                        <div class="col-md-4">
+                            <img src="public/about3.jpg" class="img-fluid rounded">
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid border-top border-secondary py-4 flex-grow-1">
+            <footer>
+                <div class="row">
+                    <div class="col col-md-8">
+                        <h4 id="contatti">Contatti</h4>
+                        <ul class="nav flex-column">
+                            <li class="nav-item mb-3">Telefono: 0735 895840</li>
+                            <li class="nav-item mb-3">Email: LuceMagica@gmail.com</li>
+                            <li class="nav-item mb-3">Fax: +39 (0) 12 345 6789</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3">
+                        <form>
+                            <h5>Iscriviti alla nostra newsletter</h5>
+                            <p>La fotografia è la tua passione? Ogni mese scriviamo un articolo su tutte le
+                                sfaccettature di
+                                questa bellissima arte!</p>
+                            <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                                <label for="newsletter1" class="visually-hidden">Email </label>
+                                <input id="newsletter1" type="text" class="form-control" placeholder="Indirizzo email">
+                                <button class="btn btn-primary" type="button">Iscriviti</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="d-flex flex-column flex-lg-row justify-content-between py-2 border-top border-secondary">
+                    <p>© 2024 Luce Magica. Tutti i diritti riservati.</p>
+                    <ul class="list-unstyled d-flex">
+                        <li class="ms-3"><a class="link-dark" href="https://twitter.com/"><img
+                                    src="public\twitter-x-logo.png" class="bi" width="24" height="24"></img></a></li>
+                        <li class="ms-3"><a class="link-dark" href="https://www.instagram.com/"><img
+                                    src="public\instagram-logo.png" class="bi" width="24" height="24"></img></a></li>
+                        <li class="ms-3"><a class="link-dark" href="https://www.facebook.com/"><img
+                                    src="public\facebook-logo.jpg" class="bi" width="24" height="24">
+                                <use xlink:href="#facebook"></use></img>
+                            </a></li>
+                    </ul>
+                </div>
+            </footer>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
